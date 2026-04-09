@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Motos — Concesionario de Motos Premium</title>
+<link rel="stylesheet" href="css/estilos1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<header id="navbar">
+  <a href="/html/index1.html" class="logo">Elite<span>.</span>Motos</a>
+  <nav>
+    <ul>
+      <li><a href="/html/index1.html" class="active">Inicio</a></li>
+      <li><a href="/html/modelos1.html">Modelos</a></li>
+      <li><a href="/html/ofertas1.html">Ofertas</a></li>
+      <li><a href="/html/marcas1.html">Marcas</a></li>
+      <li><a href="/html/contacto1.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <a href="/html/registro.html" class="nav-cta">Registrarse</a>
+  <a href="/html/inicio.html" class="nav-cta">Iniciar sesion</a>
+  <a href="/html/modelos1.html" class="nav-cta">Ver catálogo</a>
+</header>
+
+<!-- HERO CAROUSEL -->
+<section class="hero">
+  <div class="slides" id="slides">
+    <div class="slide active">
+      <div class="slide-bg" style="background-image:url('img/motos/kawasaki_ninja_H2R.jpg')"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Superbike · Japón</div>
+        <div class="slide-title">Kawasaki<br>Ninja H2R</div>
+        <div class="slide-price">desde $28,000</div>
+        <a href="/html/modelos1.html" class="slide-cta">Ver moto <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('img/motos/r1.jpg')"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Superbike · Japón</div>
+        <div class="slide-title">Yamaha<br>R1</div>
+        <div class="slide-price">desde $18,000</div>
+        <a href="/html/modelos1.html" class="slide-cta">Ver moto <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('img/motos/ducati.jpg')"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Superbike · Italia</div>
+        <div class="slide-title">Ducati<br>Panigale</div>
+        <div class="slide-price">desde $30,000</div>
+        <a href="/html/modelos1.html" class="slide-cta">Ver moto <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('img/motos/zx-10.png')"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Superbike · Japón</div>
+        <div class="slide-title">Kawasaki<br>ZX-10R</div>
+        <div class="slide-price">desde $17,500</div>
+        <a href="/html/modelos1.html" class="slide-cta">Ver moto <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="indicators" id="indicators"></div>
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num" data-target="11">0</div>
+    <div class="stat-label">Modelos disponibles</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num" data-target="8">0</div>
+    <div class="stat-label">Marcas premium</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num" data-target="15">0</div>
+    <div class="stat-label">Años de experiencia</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">24h</div>
+    <div class="stat-label">Financiación rápida</div>
+  </div>
+</div>
+
+<!-- CATÁLOGO -->
+<section class="page-section">
+  <div class="section-header">
+    <span class="section-number">01</span>
+    <h2 class="section-title">Todas las Motos</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid">
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="img/motos/r1.jpg" alt="Yamaha R1">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Yamaha R1</h3><div class="cc">1000cc · Inline-4</div></div>
+        <div class="precio">$18,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <div class="card-img-wrap">
+        <img src="img/motos/kawasaki_ninja_H2R.jpg" alt="Kawasaki H2">
+        <div class="card-overlay"></div>
+        <div class="card-badge">Bestseller</div>
+      </div>
+      <div class="card-info">
+        <div><h3>Kawasaki H2</h3><div class="cc">998cc · Supercharged</div></div>
+        <div class="precio">$28,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <div class="card-img-wrap">
+        <img src="img/motos/ducati.jpg" alt="Ducati Panigale">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Ducati Panigale</h3><div class="cc">1100cc · V4</div></div>
+        <div class="precio">$30,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-3">
+      <div class="card-img-wrap">
+        <img src="img/motos/bmws1000rr.jpg" alt="BMW S1000RR">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>BMW S1000RR</h3><div class="cc">999cc · Inline-4</div></div>
+        <div class="precio">$22,500</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="img/motos/hayabusa.png" alt="Suzuki Hayabusa">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Suzuki Hayabusa</h3><div class="cc">1340cc · Inline-4</div></div>
+        <div class="precio">$19,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <div class="card-img-wrap">
+        <img src="img/motos/aprilia.webp" alt="Aprilia RSV4">
+        <div class="card-overlay"></div>
+        <div class="card-badge">Nuevo</div>
+      </div>
+      <div class="card-info">
+        <div><h3>Aprilia RSV4</h3><div class="cc">1099cc · V4</div></div>
+        <div class="precio">$26,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <div class="card-img-wrap">
+        <img src="img/motos/cbr honda.webp" alt="Honda CBR1000RR">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Honda CBR1000RR-R</h3><div class="cc">1000cc · Inline-4</div></div>
+        <div class="precio">$29,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-3">
+      <div class="card-img-wrap">
+        <img src="img/motos/zx-10.png" alt="Kawasaki ZX-10R">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Kawasaki ZX-10R</h3><div class="cc">998cc · Inline-4</div></div>
+        <div class="precio">$17,500</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal">
+      <div class="card-img-wrap">
+        <img src="img/motos/agusta f4.jpg" alt="MV Agusta F4">
+        <div class="card-overlay"></div>
+        <div class="card-badge">Exclusivo</div>
+      </div>
+      <div class="card-info">
+        <div><h3>MV Agusta F4</h3><div class="cc">998cc · Inline-4</div></div>
+        <div class="precio">$32,000</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <div class="card-img-wrap">
+        <img src="img/motos/multiv4.png" alt="Ducati Multistrada">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>Ducati Multistrada V4</h3><div class="cc">1158cc · V4</div></div>
+        <div class="precio">$27,500</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="card reveal reveal-delay-2">
+      <div class="card-img-wrap">
+        <img src="img/motos/ktm.webp" alt="KTM 1290">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-info">
+        <div><h3>KTM 1290 Super Adv.</h3><div class="cc">1301cc · V2</div></div>
+        <div class="precio">$20,500</div>
+      </div>
+      <a href="/html/contacto1.html" class="card-hover-cta">Ver detalles <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- MARCAS -->
+<div class="marcas-section reveal">
+  <div class="section-header" style="margin-bottom:40px;">
+    <span class="section-number">02</span>
+    <h2 class="section-title">Nuestras Marcas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="marcas-grid">
+    
+    <a href="/html/marcas1.html" class="marca-item">
+       <img src="img/marcas/Logo Yamaha.png" alt="Yamaha" class="marca-img">
+      <div class="marca-logo">Yamaha</div>
+      <div class="marca-count">3 modelos</div>
+    </a>
+    <a href="/html/marcas1.html" class="marca-item">
+       <img src="img/marcas/logo kawasaki.jpg" alt="Kawasaki" class="marca-img">
+      <div class="marca-logo">Kawasaki</div>
+      <div class="marca-count">3 modelos</div>
+    </a>
+    <a href="/html/marcas1.html" class="marca-item">
+      <img src="img/marcas/Logo Ducati.png" alt="Ducati" class="marca-img">
+      <br>
+      <div class="marca-logo">Ducati</div>
+      <div class="marca-count">2 modelos</div>
+    </a>
+    <a href="/html/marcas1.html" class="marca-item">
+      <img src="img/marcas/BMW-logo.png" alt="BMW" class="marca-img"> 
+      <div class="marca-logo">BMW</div>
+      <div class="marca-count">1 modelo</div>
+    </a>
+    <a href="/html/marcas1.html" class="marca-item">
+      <img src="img/marcas/Logo Honda.jpg" alt="Honda" class="marca-img">
+      <div class="marca-logo">Honda</div>
+      <div class="marca-count">1 modelo</div>
+    </a>
+  </div>
+</div>
+
+<!-- OFERTAS -->
+<section class="page-section">
+  <div class="section-header">
+    <span class="section-number">03</span>
+    <h2 class="section-title">Ofertas Especiales</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid">
+    <div class="oferta-card reveal">
+      <div class="oferta-card-img">
+        <img src="img/motos/motos panigale.jpg" alt="Ducati Panigale">
+        <div class="descuento-badge">−17%</div>
+      </div>
+      <div class="oferta-info">
+        <h3>Ducati Panigale</h3>
+        <div class="precio-viejo">$30,000</div>
+        <div class="precio-nuevo">$25,000</div>
+      </div>
+    </div>
+    <div class="oferta-card reveal reveal-delay-1">
+      <div class="oferta-card-img">
+        <img src="img/motos/motos bmw.jpg" alt="BMW S1000RR">
+        <div class="descuento-badge">−14%</div>
+      </div>
+      <div class="oferta-info">
+        <h3>BMW S1000RR</h3>
+        <div class="precio-viejo">$22,000</div>
+        <div class="precio-nuevo">$19,000</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:48px;">
+    <a href="/html/ofertas1.html" class="btn-ver-mas">Ver todas las ofertas <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios-section">
+  <div class="section-header" style="margin-bottom:48px;">
+    <span class="section-number">04</span>
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="testimonios-grid">
+    <div class="testimonio-card reveal">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-texto">"La mejor experiencia de compra que he tenido. Me asesoraron perfectamente y salí con mi Kawasaki H2 el mismo día."</p>
+      <div class="testimonio-autor">
+        <div class="testimonio-avatar">CR</div>
+        <div>
+          <div class="testimonio-nombre">Carlos Restrepo</div>
+          <div class="testimonio-moto">Kawasaki H2 · 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio-card reveal reveal-delay-1">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-texto">"Encontré la Ducati Panigale que siempre soñé a un precio increíble. El equipo de Elite Motors es simplemente excepcional."</p>
+      <div class="testimonio-autor">
+        <div class="testimonio-avatar">AM</div>
+        <div>
+          <div class="testimonio-nombre">Alejandra Morales</div>
+          <div class="testimonio-moto">Ducati Panigale · 2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio-card reveal reveal-delay-2">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-texto">"Financiación aprobada en menos de 24 horas. Ahora conduzco mi BMW S1000RR sin preocupaciones. Totalmente recomendado."</p>
+      <div class="testimonio-autor">
+        <div class="testimonio-avatar">JV</div>
+        <div>
+          <div class="testimonio-nombre">Julián Vargas</div>
+          <div class="testimonio-moto">BMW S1000RR · 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto-section">
+  <div class="reveal">
+    <div class="contacto-tagline">
+      Hablemos<br>de tu<br><em>próxima moto.</em>
+    </div>
+    <p class="contacto-sub">Nuestro equipo de expertos está listo para asesorarte en la elección perfecta. Sin presiones, solo pasión por las dos ruedas.</p>
+    <div class="contacto-socials">
+      <a href="#" class="social-link" aria-label="Instagram">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Facebook">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="YouTube">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="reveal reveal-delay-1">
+    <div class="section-header" style="margin-bottom:32px;">
+      <span class="section-number">05</span>
+      <h2 class="section-title" style="font-size:32px;">Contáctanos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre completo" id="idx-nombre">
+    </div>
+    <div class="form-group">
+      <label>Correo</label>
+      <input type="email" placeholder="tu@correo.com" id="idx-correo">
+    </div>
+    <div class="form-group">
+      <label>Mensaje</label>
+      <textarea placeholder="¿En qué podemos ayudarte?" id="idx-mensaje"></textarea>
+    </div>
+    <button class="btn-submit" id="idx-sendBtn">
+      Enviar mensaje
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M9 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="success-msg" id="idx-successMsg">✓ Mensaje enviado — te contactaremos pronto</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <div class="footer-logo">Elite<span>.</span>Motos</div>
+      <p class="footer-desc">Motos premium para quienes exigen lo mejor. Experiencia, pasión y velocidad desde 2009.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+        <a href="#" class="footer-social" aria-label="Facebook">FB</a>
+        <a href="#" class="footer-social" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Navegación</div>
+      <ul class="footer-links">
+        <li><a href="/html/index1.html">Inicio</a></li>
+        <li><a href="/html/modelos1.html">Modelos</a></li>
+        <li><a href="/html/ofertas1.html">Ofertas</a></li>
+        <li><a href="/html/marcas1.html">Marcas</a></li>
+        <li><a href="/html/contacto1.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Modelos destacados</div>
+      <ul class="footer-links">
+        <li><a href="/html/modelos1.html">Kawasaki H2</a></li>
+        <li><a href="/html/modelos1.html">Ducati Panigale</a></li>
+        <li><a href="/html/modelos1.html">BMW S1000RR</a></li>
+        <li><a href="/html/modelos1.html">Yamaha R1</a></li>
+        <li><a href="/html/modelos1.html">MV Agusta F4</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Elite Motos. Todos los derechos reservados.</div>
+    <div class="footer-copy">Medellín, Colombia · +57 2345680986 ELITE</div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/5718001234" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+<ion-icon name="logo-facebook"></ion-icon>
+
+
+<script>
+  // ─── CAROUSEL ───
+  const slides = document.querySelectorAll('.slide');
+  const indWrap = document.getElementById('indicators');
+  let current = 0, timer;
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    indWrap.appendChild(dot);
+  });
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    document.querySelectorAll('.dot')[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    document.querySelectorAll('.dot')[current].classList.add('active');
+    resetTimer();
+  }
+  function resetTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5500); }
+  resetTimer();
+
+  // ─── NAVBAR SCROLL ───
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ─── STATS COUNTER ───
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    if (!target) return;
+    let current = 0;
+    const step = Math.ceil(target / 30);
+    const interval = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current + '+';
+      if (current >= target) clearInterval(interval);
+    }, 40);
+  }
+  const statsObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); statsObs.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => statsObs.observe(el));
+
+  // ─── SCROLL REVEAL ───
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ─── FORM ───
+  document.getElementById('idx-sendBtn').addEventListener('click', function() {
+    const msg = document.getElementById('idx-successMsg');
+    msg.style.display = 'block';
+    this.disabled = true; this.style.opacity = '0.5';
+    setTimeout(() => { msg.style.display = 'none'; this.disabled = false; this.style.opacity = '1'; }, 4000);
+  });
+</script>
+</body>
+</html>
