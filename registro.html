@@ -180,6 +180,25 @@
             ¡Cuenta creada! Bienvenido a Elite Motos.
           </div>
 
+          <!-- ===== SECCIÓN REDES SOCIALES ===== -->
+          <div class="d-flex align-items-center gap-2 my-4">
+            <hr class="flex-grow-1 m-0">
+            <span class="text-muted small px-2">O regístrate con</span>
+            <hr class="flex-grow-1 m-0">
+          </div>
+
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-danger d-flex align-items-center justify-content-center gap-2" id="btnGoogle">
+              <i class="bi bi-google fs-5"></i>
+              <span>Continuar con Google</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2" id="btnFacebook">
+              <i class="bi bi-facebook fs-5"></i>
+              <span>Continuar con Facebook</span>
+            </button>
+          </div>
+          <!-- ===== FIN SECCIÓN REDES SOCIALES ===== -->
+
           <!-- Link a login -->
           <p class="auth-switch mt-4">
             ¿Ya tienes cuenta?
@@ -323,6 +342,14 @@
           btn.style.opacity = '1';
         }, 5000);
       }
+    });
+
+    // Botones redes sociales
+    document.getElementById('btnGoogle').addEventListener('click', function () {
+      alert('Redirigiendo a Google...');
+    });
+    document.getElementById('btnFacebook').addEventListener('click', function () {
+      alert('Redirigiendo a Facebook...');
     });
   </script>
 </body>
