@@ -78,3 +78,27 @@ footer { background: var(--dark); border-top: 1px solid var(--border); }
 
 @media (max-width: 900px) { header { padding: 0 24px; } .nav-cta { display: none; } .catalogo, .footer-top { padding: 48px 24px; } .footer-bottom { padding: 20px 24px; } .page-hero { padding-left: 24px; } nav ul { gap: 20px; } .footer-top { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { nav ul { display: none; } .grid { grid-template-columns: 1fr; } }
+.resultado-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.resultado-num {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--accent); /* o el color de acento que uses */
+}
+.resultado-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+}
+.resultado-marca {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.4);
+}
