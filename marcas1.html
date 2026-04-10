@@ -7,6 +7,28 @@
 <link rel="stylesheet" href="css/estiloMarcas1.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  /* Estilos rápidos para el nuevo buscador */
+  .search-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #marcaSearch {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    font-family: 'Barlow', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  #marcaSearch:focus {
+    border-color: #d32f2f; /* Color acento */
+  }
+</style>
 </head>
 <body>
 <header id="navbar">
@@ -34,10 +56,14 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="marcas-grid">
+  <div class="search-container">
+    <input type="text" id="marcaSearch" placeholder="Busca tu marca favorita...">
+  </div>
+
+  <div class="marcas-grid" id="marcasGrid">
     <a href="modelos.html?marca=yamaha" class="marca-card reveal">
       <div class="marca-logo-wrap">
-        <img src="img/marcas/Logo Yamaha.png" alt="Yamaha" class="marca-img">
+        <img src="img/marcas/Logo Yamaha.png" alt="Logo de motos Yamaha" class="marca-img" loading="lazy">
       </div>
       <div class="marca-name">Yamaha</div>
       <div class="marca-origin">Japón · desde 1955</div>
@@ -49,7 +75,7 @@
 
     <a href="modelos.html?marca=kawasaki" class="marca-card reveal reveal-delay-1">
       <div class="marca-logo-wrap">
-        <img src="img/marcas/logo kawasaki.jpg" alt="Kawasaki" class="marca-img">
+        <img src="img/marcas/logo kawasaki.jpg" alt="Logo de motos Kawasaki" class="marca-img" loading="lazy">
       </div>
       <div class="marca-name">Kawasaki</div>
       <div class="marca-origin">Japón · desde 1966</div>
@@ -61,7 +87,7 @@
 
     <a href="modelos.html?marca=ducati" class="marca-card reveal reveal-delay-2">
       <div class="marca-logo-wrap">
-        <img src="img/marcas/Logo Ducati.png" alt="Ducati" class="marca-img">
+        <img src="img/marcas/Logo Ducati.png" alt="Logo de motos Ducati" class="marca-img" loading="lazy">
       </div>
       <div class="marca-name">Ducati</div>
       <div class="marca-origin">Italia · desde 1926</div>
@@ -73,7 +99,7 @@
 
     <a href="modelos.html?marca=bmw" class="marca-card reveal reveal-delay-3">
       <div class="marca-logo-wrap">
-        <img src="img/marcas/BMW-logo.png" alt="BMW" class="marca-img">
+        <img src="img/marcas/BMW-logo.png" alt="Logo de motos BMW" class="marca-img" loading="lazy">
       </div>
       <div class="marca-name">BMW</div>
       <div class="marca-origin">Alemania · desde 1923</div>
@@ -85,7 +111,7 @@
 
     <a href="modelos.html?marca=honda" class="marca-card reveal reveal-delay-4">
       <div class="marca-logo-wrap">
-        <img src="img/marcas/Logo Honda.jpg" alt="Honda" class="marca-img">
+        <img src="img/marcas/Logo Honda.jpg" alt="Logo de motos Honda" class="marca-img" loading="lazy">
       </div>
       <div class="marca-name">Honda</div>
       <div class="marca-origin">Japón · desde 1948</div>
@@ -132,13 +158,31 @@
 </a>
 
 <script>
+  // Navbar scroll
   window.addEventListener('scroll', () => {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
   });
+
+  // Reveal animations
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // CAMBIO: Lógica del buscador
+  document.getElementById('marcaSearch').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll('.marca-card');
+    
+    cards.forEach(card => {
+      let name = card.querySelector('.marca-name').textContent.toLowerCase();
+      if(name.includes(filter)) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 </script>
 </body>
 </html>
